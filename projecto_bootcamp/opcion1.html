@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Renovables y Transición Energética</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="encabezado">
+        <header>
+            <h1>Energías Renovables y Transición Energética</h1>
+            <p>Un análisis global sobre la evolución de las energías limpias y su impacto en la descarbonización.</p>
+        </header>
+        <nav>
+            <a href="#formulario">Formulario</a>
+            <a href="./energias.html">Tipos de Energía</a>
+            <a href="./energias.html#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+</div>
+    <section>
+        <h2>Explorando las Fuentes de Energía Renovable</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Energía Solar</h3>
+                <p>La energía del sol, cada vez más eficiente, es una de las principales fuentes renovables a nivel mundial.</p>
+                <h4>Impacto Global</h4>
+                <p>Ha aumentado un 20% en los últimos 5 años en países como China y Estados Unidos.</p>
+            </div>
+            <div class="card">
+                <h3>Energía Eólica</h3>
+                <p>La energía generada a partir del viento está ganando terreno, especialmente en Europa y América del Norte.</p>
+                <h4>Proyección de Crecimiento</h4>
+                <p>Se espera que la capacidad mundial eólica crezca en un 60% para 2030.</p>
+            </div>
+            <div class="card">
+                <h3>Energía Hidroeléctrica</h3>
+                <p>Una de las fuentes más antiguas y grandes, utilizada ampliamente en países como Brasil y Canadá.</p>
+                <h4>Capacidad Instalada</h4>
+                <p>Representa el 60% de la producción global de energía renovable.</p>
+            </div>
+            <div class="card">
+                <h3>Biomasa</h3>
+                <p>La conversión de residuos orgánicos en energía ha mostrado un crecimiento sostenido, especialmente en Asia.</p>
+                <h4>Factores Claves</h4>
+                <p>La disponibilidad de biomasa y los avances en tecnología de conversión están impulsando su expansión.</p>
+            </div>
+            <div class="card">
+                <h3>Geotermia</h3>
+                <p>Utiliza el calor de la Tierra para producir electricidad, especialmente en países con alta actividad volcánica.</p>
+                <h4>Distribución Global</h4>
+                <p>Los principales productores de energía geotérmica son Estados Unidos, Indonesia y Nueva Zelanda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario">
+        <header>
+            <h1>Estimación de Energía Renovable en Consumo Eléctrico</h1>
+        </header>
+        <div class="form-container">
+            <h2>Formulario de Estimación</h2>
+            <form id="energyForm">
+                <label for="totalConsumption">Consumo Eléctrico Total (kWh):</label>
+                <input type="number" id="totalConsumption" name="totalConsumption" placeholder="Introduce el consumo en kWh" required>
+    
+                <label for="energyType">Tipo de Energía:</label>
+                <select id="energyType" name="energyType" required>
+                    <option value="" disabled selected>Selecciona el tipo de energía</option>
+                    <option value="solar">Solar (40% renovable)</option>
+                    <option value="eolica">Eólica (50% renovable)</option>
+                    <option value="hidraulica">Hidráulica (70% renovable)</option>
+                    <option value="mixta">Mixta (30% renovable)</option>
+                </select>
+    
+                <button type="button" onclick="calcularPorcentaje()">Calcular Porcentaje de Energía Renovable</button>
+            </form>
+            <h3>Resultado:</h3>
+            <div id="result">Introduce los datos y presiona calcular.</div>
+        </div>
+    </section>
+    
+
+    <div class="quote">
+        <p><strong>"La transición hacia una energía más limpia es clave para mitigar los efectos del cambio climático y garantizar un futuro sostenible para las generaciones venideras."</strong></p>
+    </div>
+
+    <section>
+        <article class="impacto">
+        <h2>Impacto Histórico de los Combustibles Fósiles</h2>
+        <p>Desde la Revolución Industrial, los combustibles fósiles han dominado las matrices energéticas de la mayoría de los países, lo que ha ocasionado un aumento en las emisiones de CO2 y la contaminación del aire. Este modelo ha tenido consecuencias graves tanto para el clima global como para la salud humana.</p>
+     </article>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Emisiones de CO2</h3>
+                <p>Las emisiones de CO2 relacionadas con los combustibles fósiles representan más del 70% de las emisiones globales.</p>
+                <h4>Datos Clave</h4>
+                <p>La mayor parte de las emisiones provienen de la quema de carbón, petróleo y gas natural.</p>
+            </div>
+            <div class="card">
+                <h3>Contaminación Local</h3>
+                <p>Las ciudades con alta dependencia de combustibles fósiles enfrentan altos niveles de smog y enfermedades respiratorias.</p>
+                <h4>Salud Pública</h4>
+                <p>Más de 4 millones de muertes anuales están relacionadas con la contaminación del aire por combustibles fósiles.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote">
+        <p><strong>"El futuro de la energía renovable es prometedor, y su implementación acelerada es esencial para evitar los peores impactos del cambio climático."</strong></p>
+    </div>
+
+    <footer>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                telefono: 3006226597<br>
+                Email: jalvarezalvarez30@gmail.com <br>
+                github: jalvarez-a11
+            </p>
+        </section>
+        <p>&copy; 2024 Energías Renovables y Transición Energética. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
